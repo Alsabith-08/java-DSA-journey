@@ -1,5 +1,3 @@
-package ChatGPT_Problems;
-
 public class SecondLargestElement {
     public static void main(String[] args) {
         int[] arr = {12, 21, 45, 65, 76, 87, 43};
