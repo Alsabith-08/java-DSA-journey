@@ -1,18 +1,27 @@
-package ChatGPT_Problems;
 
 public class CheckIfSorted {
     public static void main(String[] args) {
-      int[] arr = {2,4,6,8,18,2};
+        int[] arr = {1,3,5,7,9,11};
+        System.out.println(checkSorted(arr));
 
-        for (int i = 0; i < arr.length -1 ; i++) {
-            if(arr[i] <= arr[i+1]){
+    }
+    static boolean checkSorted(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            
+            // for ascending order
+//            if(arr[i] <= arr[i+1]){
+//
+//            }else{
+//                return false;
+//            }
 
-            }
-            else{
-                System.out.println("false");
-                break;
+            // for descending order
+            if(arr[i] >= arr[i+1]){
+
+            }else{
+                return false;
             }
         }
-     //   System.out.println("True");
+        return true;
     }
 }
