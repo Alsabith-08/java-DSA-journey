@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Strings;
-
 public class RemoveAllWhiteSpacesInString {
     public static void main(String[] args) {
         String str1 = "    Al sabith berlin     ";
