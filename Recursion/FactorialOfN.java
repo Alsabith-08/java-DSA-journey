@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Recursion;
-
 public class FactorialOfN {
     public static void main(String[] args) {
         System.out.println(factorial(5));
@@ -9,6 +7,7 @@ public class FactorialOfN {
         if(n == 1){
             return 1;
         }
+        // Recursion
         return n * factorial(n-1);
     }
 }
