@@ -1,5 +1,3 @@
-package ChatGPT_Problems;
-
 import java.util.Scanner;
 
 public class PalindromeString {
