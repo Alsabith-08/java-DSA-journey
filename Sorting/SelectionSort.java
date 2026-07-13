@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Arrays;
-
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -11,6 +9,7 @@ public class SelectionSort {
     }
     static void selection(int[] arr){
         for (int i = 0; i < arr.length; i++) {
+            // find the min element then swap it
             int min =i;
             for (int j = i+1; j < arr.length; j++) {
 
