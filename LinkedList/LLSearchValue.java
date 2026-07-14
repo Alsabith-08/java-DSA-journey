@@ -29,7 +29,6 @@ public class LLSearchValue {
 
         Node current = head;
 
-        // Search value in LinkedList using two traverse
         int searchKey = 17;
         boolean found = false;
 
