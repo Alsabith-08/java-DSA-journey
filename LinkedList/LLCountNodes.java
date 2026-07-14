@@ -1,4 +1,3 @@
-package ChatGPT_Problems.LinkedList;
 
 class Node {
     int data;
@@ -11,7 +10,7 @@ class Node {
 public class LLCountNodes {
     public static void main(String[] args) {
 
-        // Traverse the LinkedList
+        // Count the total nodes
         int count = 0;
 
         Node first = new Node(12);
