@@ -1,4 +1,3 @@
-package ChatGPT_Problems.LinkedList;
 
 class Node {
     int data;
