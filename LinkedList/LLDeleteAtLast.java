@@ -1,5 +1,3 @@
-package ChatGPT_Problems.LinkedList;
-
 public class LLDeleteAtLast {
     public static void main(String[] args) {
         Node first = new Node(23);
@@ -13,10 +11,11 @@ public class LLDeleteAtLast {
 
         Node head = first;
         Node current = head;
-
+        // stop the second last node to delete it
         while(current.next.next != null ){
             current = current.next;
-        }
+        } 
+        // delete it ,then that node will be delete
         current.next = null;
 
         current = head;
