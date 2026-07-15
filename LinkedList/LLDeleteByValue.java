@@ -1,5 +1,3 @@
-package ChatGPT_Problems.LinkedList;
-
 public class LLDeleteByValue {
     public static void main(String[] args) {
         Node first = new Node(23);
@@ -14,15 +12,16 @@ public class LLDeleteByValue {
         Node head = first;
 
         int value = 34;
-
+        // special cases
         if(head != null && head.data == value){
             head = head.next;
         }else{
             Node current = head;
-
+            // find the before node of the value
             while(current.next != null && current.next.data != value){
                 current = current.next;
             }
+            // change the reference to the current node address to next to next node
             if(current.next != null){
                 current.next = current.next.next;
             }
