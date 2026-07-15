@@ -1,7 +1,6 @@
-package ChatGPT_Problems.LinkedList;
-
 public class LLDeleteAtFirst {
     public static void main(String[] args) {
+        
         Node first = new Node(23);
         Node second = new Node(34);
         Node third = new Node(54);
@@ -12,7 +11,7 @@ public class LLDeleteAtFirst {
         third.next = fourth;
 
         Node head = first;
-
+        // just change the head reference to delete the first node 
         head = head.next;
         Node current = head;
 
