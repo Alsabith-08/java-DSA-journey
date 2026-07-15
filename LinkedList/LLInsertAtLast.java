@@ -1,5 +1,3 @@
-package ChatGPT_Problems.LinkedList;
-
 public class LLInsertAtLast {
     public static void main(String[] args) {
 
@@ -13,13 +11,14 @@ public class LLInsertAtLast {
         third.next = fourth;
 
         Node newNode = new Node(76);
-
+        
         Node head = first;
         Node current = head;
-
+        // stop the node before the last node
         while(current.next != null){
             current = current.next;
         }
+        // insert in that place
         current.next = newNode;
 
         current = head;
