@@ -1,10 +1,9 @@
-package DSA;
 
 public class InterPolationSearchEx {
     public static void main(String[] args) {
-        int[] arr ={1,2,4,8,16,32,64,128,512,1024};
+        int[] arr ={1,2,4,5,7,9,10};
 
-        int index = interpolationSearch(arr , 32);
+        int index = interpolationSearch(arr , 5);
 
         if(index != -1){
             System.out.println("element found at " + index);
@@ -17,9 +16,10 @@ public class InterPolationSearchEx {
     static int interpolationSearch(int[] arr , int value){
         int low = 0;
         int high = arr.length -1;
-
+        
         while(value <= arr[high] && value >= arr[low] && low <= high){
 
+            // Formula
             int probe = low + (high - low) * (value - arr[low]) /
                         (arr[high] - arr[low]);
 
