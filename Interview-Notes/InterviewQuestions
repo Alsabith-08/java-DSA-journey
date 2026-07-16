@@ -1,6 +1,0 @@
-Explain it in a Logical flow : Concept -> Reason -> Time Complexity -> Example.
-
-Q1 . Why is insertion at the beginning of a linked list O(1) but in Array it is O(n) ?
-Q2 . What are the disadvantages of LinkedLists compared to Arrays ? 
-Q3 . Why is Insertion at the beginning of a LinkedList O(1) ?
-Q4 . Why is Insertion at thr end of a Singly LinkedList O(n) if we only have a head Pointer ?
