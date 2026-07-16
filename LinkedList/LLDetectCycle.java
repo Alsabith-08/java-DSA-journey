@@ -1,5 +1,3 @@
-package ChatGPT_Problems.LinkedList;
-
 public class LLDetectCycle {
     public static void main(String[] args) {
         Node first = new Node(12);
