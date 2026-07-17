@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Stack;
-
 public class ReverseStack {
     public static void main(String[] args) {
         String str = "Hello";
