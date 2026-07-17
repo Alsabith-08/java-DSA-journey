@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Stack;
-
 import java.util.Stack;
 
 // stack is the LIFO data structure and linear
