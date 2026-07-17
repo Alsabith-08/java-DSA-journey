@@ -1,8 +1,7 @@
-package ChatGPT_Problems.Stack;
-
 public class CustomStack {
     public static void main(String[] args) {
         customstack stack = new customstack(5);
+        
         stack.push(12);
         stack.push(43);
         stack.push(2);
@@ -28,14 +27,15 @@ public class CustomStack {
             top = -1;
         }
 
-        // check stack is empty
+        // check stack is empty or not
         public boolean isEmpty() {
             return top == -1;
         }
+         // check stack is full or not
         public boolean isFull() {
             return top == capacity - 1;
         }
-
+        
         public void push(int value) {
             if (isFull()) {
                 System.out.println("Stack Overflow");
