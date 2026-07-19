@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Queue;
-
 public class CustomCircularQueue {
     public static void main(String[] args) {
         circularQueue queue = new circularQueue(5);
