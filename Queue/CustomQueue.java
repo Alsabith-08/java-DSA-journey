@@ -1,6 +1,3 @@
-package ChatGPT_Problems.Queue;
-
-
 import java.util.Queue;
 
 public class CustomQueue {
