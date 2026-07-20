@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Stack;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
