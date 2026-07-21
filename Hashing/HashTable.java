@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Hashing;
-
 public class HashTable {
     public static void main(String[] args) {
 
