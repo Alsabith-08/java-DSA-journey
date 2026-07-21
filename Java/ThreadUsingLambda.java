@@ -32,8 +32,8 @@ public class ThreadUsingLambda {
             }
         };
 
-        // it does't have a start method so refer the parentclass for each class obj /
-        //then the constructor pass the obj into the threads obj then, the thread will be execute the start method..
+        // it doesn't have a start method so refer the parent class for each class obj /
+        //then the constructor pass the obj into the threads obj then, the thread will  execute the start method..
 
         Thread t1 = new Thread(obj1);
         Thread t2 = new Thread(obj2);
