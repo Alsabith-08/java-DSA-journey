@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Hashing;
-
 import java.util.HashMap;
 
 public class FindNon_RepeatingCharacter {
