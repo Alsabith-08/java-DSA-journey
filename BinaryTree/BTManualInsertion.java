@@ -1,8 +1,17 @@
-package ChatGPT_Problems.BinarySearchTree;
-
-
 // 1 . Manual Insertion
+
+    class TreeNode{
+        int data;
+        TreeNode left, right;
+
+        public TreeNode(int data){
+            this.data = data;
+            left = null;
+            right= null;
+        }
+    }
 public class BTManualInsertion {
+    
     public static void main(String[] args) {
 
         TreeNode root = new TreeNode(50);
@@ -24,15 +33,5 @@ public class BTManualInsertion {
         System.out.println(root.right.right.data);
         System.out.println(root.right.right.left.data);
 
-    }
-    static class TreeNode{
-        int data;
-        TreeNode left, right;
-
-        public TreeNode(int data){
-            this.data = data;
-            left = null;
-            right= null;
-        }
     }
 }
