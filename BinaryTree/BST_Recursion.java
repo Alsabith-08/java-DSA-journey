@@ -1,6 +1,3 @@
-package ChatGPT_Problems.BinarySearchTree;
-
-//
 class TreeNode {
     int data;
     TreeNode left, right;
