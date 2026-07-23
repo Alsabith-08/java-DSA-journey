@@ -1,4 +1,3 @@
-package ChatGPT_Problems.BinarySearchTree;
 
 public class BST_Insertion {
     public static void main(String[] args) {
@@ -24,11 +23,11 @@ public class BST_Insertion {
     }
     static class BST{
         TreeNode insert (TreeNode root , int data){
-
+            
             if(root == null){
                 return new TreeNode(data);
             }
-
+            // Structure of BinarySearchTree
             if(data < root.data){
                 root.left = insert(root.left , data);
             }else{
@@ -36,6 +35,7 @@ public class BST_Insertion {
             }
             return root;
         }
+        // Inorder Traversal
         public void inorder(TreeNode root){
             if(root == null){
                 return;
