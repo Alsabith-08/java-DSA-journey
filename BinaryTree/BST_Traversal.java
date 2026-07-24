@@ -1,5 +1,8 @@
-package ChatGPT_Problems.BinarySearchTree;
-
+// Traversal 
+// 1. PreOrder 
+// 2. Inorder - this gives in sorted order (Ascending)
+// 3. PostOrder
+// most of time we use the inorder traversal 
 public class BST_Traversal {
 
     public static void main(String[] args) {
