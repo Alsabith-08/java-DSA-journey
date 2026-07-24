@@ -1,6 +1,3 @@
-package ChatGPT_Problems.BinarySearchTree;
-
-
 // Search in BST - Time Complexity O(log n)
 // Because for each comparison the search space will reduce by the half so on.
 // if Search in skewed BST - looks like a linkedList so the Time Complexity - O(n).
