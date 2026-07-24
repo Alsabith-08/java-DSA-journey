@@ -1,5 +1,3 @@
-package ChatGPT_Problems.BinarySearchTree;
-
 public class BST_MinAndMaxNode {
     public static void main(String[] args) {
 
