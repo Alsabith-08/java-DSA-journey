@@ -1,4 +1,3 @@
-package ChatGPT_Problems.BinarySearchTree;
 
 public class BST_Deletion {
     public static void main(String[] args) {
@@ -52,7 +51,7 @@ public class BST_Deletion {
             return root;
         }
 
-        // FindMin (Inorder Successor)
+        // FindMininum (Inorder Successor)
         TreeNode findMin(TreeNode root){
             while(root.left != null){
                 root = root.left;
@@ -60,6 +59,7 @@ public class BST_Deletion {
             return root;
         }
 
+        // Delete
         TreeNode delete(TreeNode root,  int key){
             if(root == null)
                 return null;
