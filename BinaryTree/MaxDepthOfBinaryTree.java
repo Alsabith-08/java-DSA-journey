@@ -1,10 +1,7 @@
-package LeetCodeEx;
-
-
 // Maximum Depth = no.of.nodes on the longest path from thr root to a leaf
 // Maximum Depth (nodes) - 4
 // Longest Path (edges) - 3
-public class MaxDepthOfBT_104 {
+public class MaxDepthOfBinaryTree {
     public static void main(String[] args) {
 
         BinaryTree tree = new BinaryTree();
@@ -48,14 +45,17 @@ public class MaxDepthOfBT_104 {
         // Space Complexity - O(log n) - Best Case(Balanced Tree)
         //                  - O(n) - Worst Case (Skewed Tree)
       public int maxDepth(TreeNode root){
+          // Base Case
             if(root == null){
                 return 0;
             }
-
+            // Find depth of the left subtree
             int leftDepth = maxDepth(root.left);
-
+          
+            // Find depth of the left subtree
             int rightDepth = maxDepth(root.right);
-
+          
+            // Return Maximum Depth
             return 1+Math.max(leftDepth , rightDepth);
         }
     }
