@@ -1,5 +1,4 @@
-package ChatGPT_Problems.BinarySearchTree;
-
+// Tine Complexity - O(n)
 public class MinimumAbsoluteDifferenceInBST {
     public static void main(String[] args) {
 
