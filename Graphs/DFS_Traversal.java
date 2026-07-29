@@ -1,7 +1,8 @@
-package ChatGPT_Problems.Graphs;
-
 import java.util.ArrayList;
 
+// DFS - Depth-First search
+// Time Complexity - O(E+V)
+// Space Complexity - O(E+V)
 public class DFS_Traversal {
     public static void main(String[] args) {
         int vertices = 4;
@@ -27,6 +28,7 @@ public class DFS_Traversal {
 
         dfs(0 , graph , visited);
     }
+    // function of DFS
     static void dfs(int node , ArrayList<ArrayList<Integer>> graph , boolean[] visited){
 
         visited[node] = true;
