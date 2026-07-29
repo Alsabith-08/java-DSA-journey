@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -40,6 +38,7 @@ public class BFS_Traversal {
 
         // create a visited array for the graph size
         boolean[] visited = new boolean[graph.size()];
+         
         // create a queue- because FIFO
          Queue<Integer> queue = new LinkedList<>();
 
