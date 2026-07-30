@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 public class NoOf_Islands {
     public static void main(String[] args) {
 
@@ -43,7 +41,7 @@ public class NoOf_Islands {
             }
             // Mark visited
             grid[row][col] ='0';
-
+            
             dfs(grid, row-1 , col);
 
             dfs(grid , row+1 ,col);
