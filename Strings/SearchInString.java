@@ -1,5 +1,3 @@
-package DSA;
-
 // search in strings
 
 public class SearchInString {
