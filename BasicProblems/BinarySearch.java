@@ -1,5 +1,3 @@
-package Revision;
-
 /*  Basic Problems in BinarySearch
   1. Implement Binary Search (Iterative).
   2. Implement Binary Search (Recursive).
