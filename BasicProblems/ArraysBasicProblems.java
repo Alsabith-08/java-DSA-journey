@@ -1,5 +1,3 @@
-package Revision;
-
 import java.util.Arrays;
 
 /*
@@ -14,8 +12,8 @@ public class ArraysBasicProblems {
     public static void main(String[] args) {
         int[] arr = {2,5,6,7,9,0,1,2};
         reverse(arr);
-
-        // methods to print the element in Array
+         
+        // 1. methods to print the element in Array
         // method :1 use for loop
         for (int i = 0; i < arr.length ; i++) {
             System.out.println(arr[i] + " ");
@@ -46,7 +44,7 @@ public class ArraysBasicProblems {
 
     }
 
-    // . Reverse An Array
+    // 3. Reverse An Array
     public static void reverse(int[] arr){
         int i=0 , j = arr.length-1;
 
