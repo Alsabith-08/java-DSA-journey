@@ -1,6 +1,15 @@
-package BasicProblems;
-
-
+/*  
+    Basic Operations in Linked List
+    
+    Node structure
+ 1. Insert a node at the beginning.
+ 2. Insert a node at the end.
+ 3. Delete the first node.
+ 4. Delete the last node
+ 5. Search for an element in a Linked List.
+ 6. Reverse a Singly Linked List.
+ 7. Display the Linked List
+*/
 public class SinglyLinkedList {
 
     // Node Structure
@@ -8,6 +17,7 @@ public class SinglyLinkedList {
         int data;
         Node next;
 
+        // Constructor
         public Node(int data){
             this.data = data;
         }
@@ -15,7 +25,7 @@ public class SinglyLinkedList {
     // Head of the LinkedList
     Node head;
 
-    // 1. Insert At First
+    // 1. Insert At First - O(1)
     public void insertFirst(int data){
         Node newNode = new Node(data);
 
@@ -23,7 +33,7 @@ public class SinglyLinkedList {
         head = newNode;            // change the head pointer to the newNode
     }
 
-    // 2. Insert At Last
+    // 2. Insert At Last - O(n)
     public void insertLast(int data){
         // first create that node
         Node newNode = new Node(data);
@@ -41,7 +51,7 @@ public class SinglyLinkedList {
     }
 
 
-    // 3. Delete First
+    // 3. Delete First - O(1)
     public void deleteFirst(){
         if(head == null){
             return;
@@ -49,7 +59,7 @@ public class SinglyLinkedList {
         head = head.next;         // change the head Pointer to the next node of the head
     }
 
-    // 4. Delete Last
+    // 4. Delete Last - O(n)
     public void deleteLast(){
 
         if(head == null){
@@ -69,7 +79,7 @@ public class SinglyLinkedList {
         current.next = null;    // change the last node to null
     }
 
-    // 5. Search Element in LinkedList
+    // 5. Search Element in LinkedList - Best Case O(1),  Worst Case O(n)
     public boolean search(int key){
         if(head == null){
             return false;
@@ -85,7 +95,7 @@ public class SinglyLinkedList {
         return false;
     }
 
-    // 6. Reverse A LinkedList
+    // 6. Reverse A LinkedList - O(n)
     public void reverse(){
 
         Node prev = null;       // the node we're currently processing
@@ -107,7 +117,7 @@ public class SinglyLinkedList {
         head = prev;  // new Head
     }
 
-    // 7. Display the LinkedList
+    // 7. Display the LinkedList - O(n)
     public void display(){
         if(head == null){
             System.out.println("LinkedList is Empty");
