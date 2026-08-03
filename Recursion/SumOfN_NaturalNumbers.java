@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Recursion;
-
 import java.util.Scanner;
 
 public class SumOfN_NaturalNumbers {
