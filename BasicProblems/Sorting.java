@@ -1,5 +1,13 @@
-package BasicProblems;
-
+/*
+  Basic Sorting Problems
+  
+  1. Bubble Sort
+  2. Selection Sort
+  3.Insertion Sort
+  4. Sort an array in ascending order
+  5. Sort an array in descending order
+  
+*/
 import java.util.Arrays;
 
 public class SortingBasicProblems {
