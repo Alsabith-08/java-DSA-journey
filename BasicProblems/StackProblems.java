@@ -1,5 +1,3 @@
-package BasicProblems;
-
 import java.util.Stack;
 
 public class StackProblems {
@@ -156,6 +154,8 @@ public class StackProblems {
         }
         return stack.isEmpty();
     }
+
+    // Reverse the String using Stack
     public static String reverseString(String s){
         Stack<Character> stack = new Stack<>();   // create an Empty Stack
 
