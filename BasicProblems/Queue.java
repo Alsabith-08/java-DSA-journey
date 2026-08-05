@@ -1,9 +1,17 @@
-package BasicProblems;
+
+/*   Basic Problems
+   1. Implement Queue using an array.
+   2. Enqueue an element.
+   3. Dequeue an element.
+   4. Display an Queue
+   5. Implement Circular Queue.
+   6. Check if Queue is Full or Empty
+*/
 
 public class Queue {
     public static void main(String[] args) {
 
-        // 1. Linear Queue
+        // 1. Linear Queue using Arrays
         queueUsingArray queue = new queueUsingArray(5);
 
         queue.enqueue(12);
@@ -42,9 +50,11 @@ public class Queue {
 
     // LINEAR QUEUE
     static class queueUsingArray{
+        // Variables
         int[] arr;
         int front, rear , size;
 
+        // Constructor
         public queueUsingArray(int size){
             this.size = size;
             arr = new int[size];
@@ -52,7 +62,7 @@ public class Queue {
             rear = -1;
         }
 
-        // Enqueue
+        // Enqueue - O(1)
         public void enqueue(int value){
             if(rear == size -1){
                 System.out.println("Queue is Full");
@@ -62,7 +72,7 @@ public class Queue {
             arr[rear] = value;
         }
 
-        // Dequeue
+        // Dequeue - O(1)
         public int dequeue(){
             if(front > rear){
                 System.out.println("Queue is Empty");
@@ -71,7 +81,7 @@ public class Queue {
             return arr[front++];
         }
 
-        // Display
+        // Display - O(n)
         public void display(){
             if(front > rear){
                 System.out.println("Queue is Empty");
@@ -97,17 +107,17 @@ public class Queue {
             rear = -1;
         }
 
-        // isFull
+        // Circular Queue -isFull
         public boolean isFull(){           // rear == front means queue is full
             return (rear+1)%size == front;
         }
 
-        // isEmpty
+        // Circular Queue - isEmpty
         public boolean isEmpty(){         // if front is -1 the queue is Empty
             return front == -1;
         }
 
-        // Enqueue
+        // Enqueue -- O(1)
         public void enqueue(int value) {
 
             if(isFull()){                                 // Check if full
@@ -123,7 +133,7 @@ public class Queue {
             arr[rear] = value;                            // insert it
         }
 
-        // Dequeue
+        // Dequeue - O(1)
         public int dequeue(){
 
             if(isEmpty()){
@@ -141,7 +151,8 @@ public class Queue {
             return value;
         }
 
-        // display
+        // display - why doesn't use normal for loop like in linear Queue
+        // in linear queue is front to rear but in circular queue doesn't effecient 
         public void display(){
             if(front == -1){
                 System.out.println("Queue is Empty");
