@@ -1,5 +1,3 @@
-package BasicProblems;
-
 //  Basic Problems
 //  1. Count the frequency of elements in an array.
 //  2. Count the frequency of characters in a string.
@@ -24,6 +22,8 @@ public class Hashing {
         System.out.println(map);
 
 
+        
+
 // 2. Count the frequency of each Character in String
         String string = "alsabithberlin";
 
@@ -34,6 +34,7 @@ public class Hashing {
         }
         System.out.println(map1);
 
+        
 
 
 // 3. Find the First-non Repeating Character
@@ -51,6 +52,8 @@ public class Hashing {
             }
         }
 
+        
+
 // 4. find Duplicate Element in an Array
         int[] arr1 ={1,2,3,2,4,5,1};
 
@@ -64,6 +67,8 @@ public class Hashing {
             }
         }
 
+
+        
 // call the checkAnagram
         String s1 = "alsAbith";
         String s2 = "hibsAalt";
@@ -72,6 +77,7 @@ public class Hashing {
 // Anagram Using Sorting
         AnagramInSort(s1, s2);
 
+// call the AnagramInArray        
         if(AnagramInArray(s1 , s2)){
             System.out.println("Anagram");
         }else{
