@@ -1,6 +1,3 @@
-package BasicProblems;
-
-
 import java.util.Scanner;
 
 /* Basic problems
@@ -15,24 +12,30 @@ public class Recursion {
 
         Scanner sc = new Scanner(System.in);
 
-        // print 1 to N
-//        System.out.print("Enter the value for N : ");
-//        int n = sc.nextInt();
-//        int i = 1;
-//        print(i , n);
-//
-//
-//        // print N to 1
-//        int m = 6;
-//        print_N_1(m);
-//
-//        // Factorial
-//        int f = 4;
-//        System.out.println(factorial(f));
-//
-//        // Sum of first N natural Numbers
-//        int N = 4;
-//        System.out.println(sumOfNatural(N));
+       // print 1 to N
+       System.out.print("Enter the value for N : ");
+       int n = sc.nextInt();
+       int i = 1;
+       print(i , n);
+
+
+       // print N to 1
+       int m = 6;
+       print_N_1(m);
+
+       
+
+       // Factorial
+       int f = 4;
+       System.out.println(factorial(f));
+
+       
+
+       // Sum of first N natural Numbers
+       int N = 4;
+       System.out.println(sumOfNatural(N));
+
+       
 
         // Fibonacci Number
         System.out.print("Enter the number :");
