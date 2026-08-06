@@ -1,7 +1,14 @@
-package BasicProblems;
+/*  Basic Problems of Heap
+   1. Build a Max Heap from an array.
+   2. Insert an element into a Max Heap.
+   3. Delete the root from a Max Heap.
+   4. Implement Heap Sort.
+   5. Find the Kth Largest Element.
+    */
 
 public class Heap {
     public static void main(String[] args) {
+        
         int[] arr= {10,20,15,30,40};
 
         System.out.println("Before buildHeap");
@@ -16,6 +23,8 @@ public class Heap {
             System.out.print( x+ " ");
         }
     }
+
+    // Build MaxHeap
     static void buildHeap(int[] arr){
         int n = arr.length;
 
