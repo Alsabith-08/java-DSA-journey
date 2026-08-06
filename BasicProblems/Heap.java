@@ -1,16 +1,16 @@
 /*  Basic Problems of Heap
 
-   1. Build a Max Heap from an array.      (9 - 123)
-   2. Insert an element into a Max Heap.   (158 - 177)
-   3. Delete the root from a Max Heap.     (190 - 201)
-   4. Display the Heap                     (182 - 187)
-   5. Implement Heap Sort.   
-   6. Find the Kth Largest Element.        (205 -223)
+   1. Build a Max Heap from an array.      (12 - 67)
+   2. Insert an element into a Max Heap.   (140- 159)
+   3. Delete the root from a Max Heap.     (172 - 183)
+   4. Display the Heap                     (163 - 168)
+   5. Implement Heap Sort.                 (91 - 105)
+   6. Find the Kth Largest Element.        (187 -204)
 
      */
 
 public class Heap {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //----------------------------Main --------------------------------------------------
         
         int[] arr= {10,20,15,30,40};
 
@@ -27,7 +27,7 @@ public class Heap {
         }
     }
 
-    // Build MaxHeap
+  //-------------------------------------------------  Build MaxHeap------------------------------------------------
     static void buildHeap(int[] arr){
         int n = arr.length;
 
@@ -86,45 +86,21 @@ public class Heap {
         heap.deleteRoot();
         heap.display();
     }
-// -------------------------------------------------------------------------------
+//-----------------------------------------------------------HeapSort------------------------------------------
 
-//-------------------------------------- BuildHeap-------------------------------
-
-    static void buildHeap(int[] arr){
+    static void heapSort(int[] arr){
         int n = arr.length;
-        // Find the last non-leaf Node formula : n / 2 -1
-        for(int i = n / 2 -1 ; i>= 0 ; i--){
-            heapify(arr , n , i);
-        }
-    }
 
-// Satisfy the MaxHeap Property
-    static void heapify(int[] arr ,int n , int i){
-
-        int largest = i;
-        int left = 2 * i + 1;      // Left Formula : 2* i +1
-        int right = 2 * i + 2;   // right Formula : 2* i +2
-
-
-// Check left is less than arraySize and left is greater than the largest , put into largest
-        if(left < n && arr[left] > arr[largest]){
-            largest = left;
+        for(int i= n/2 -1 ; i>= 0 ; i--){
+            heapify(arr ,n, i);
         }
 
-// Check right is less than arraySize and left is greater than largest , put into largest
-        if(right < n && arr[right] > arr[largest]){
-            largest = right;
-        }
+        for(int i = n-1 ; i>=0 ; i--){
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
 
-// check the maxHeap property - child is larger than the current node
-        if(largest != i){
-
-            // Swap them
-            int temp = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = temp;
-
-            heapify(arr , n , largest);
+            heapify(arr , i , 0);
         }
     }
 
@@ -159,7 +135,7 @@ public class Heap {
             }
         }
 
-// Insert Function
+//---------------------------------------------------- Insert Function--------------------------------------------
 
         public void insert(int value){
             heap[size] = value;
@@ -182,7 +158,7 @@ public class Heap {
             size++;
         }
 
-// Display
+//-------------------------------------------------------- Display ------------------------------------------------
 
         public void display(){
             for (int i = 0; i < size; i++) {
@@ -191,7 +167,7 @@ public class Heap {
             System.out.println();
         }
 
-//  DeleteRoot Node
+//-----------------------------------------------------DeleteRoot Node---------------------------------------------------
 
         public void deleteRoot(){
             // check is empty
@@ -206,7 +182,7 @@ public class Heap {
             heapify1(0);               // then rebuild to satisfy the MaxHeap Property
         }
 
-// Find The Kth Largest Element
+//------------------------------------------------- Find The Kth Largest Element------------------------------------------
 
         public void KthLargest(int[] arr , int k ){
 
