@@ -1,11 +1,11 @@
 /*  Basic Problems of Heap
 
-   1. Build a Max Heap from an array.      (12 - 67)
-   2. Insert an element into a Max Heap.   (140- 159)
-   3. Delete the root from a Max Heap.     (172 - 183)
-   4. Display the Heap                     (163 - 168)
-   5. Implement Heap Sort.                 (91 - 105)
-   6. Find the Kth Largest Element.        (187 -204)
+   1. Build a Max Heap from an array.     -O(n)           (12 - 67)
+   2. Insert an element into a Max Heap.  -O(log n)       (140- 159)
+   3. Delete the root from a Max Heap.    -O(log n)       (172 - 183)
+   4. Display the Heap                    -O(n)           (163 - 168)
+   5. Implement Heap Sort.                -O(n log n)     (91 - 105)
+   6. Find the Kth Largest Element.       -O(n + k log n) (187 -204)
 
      */
 
