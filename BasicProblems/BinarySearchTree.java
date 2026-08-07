@@ -1,10 +1,9 @@
-package BasicProblems;
 
-//   1. Insert a node into a BST.
-//   2. Search for a value in a BST.
-//   3. Find the minimum and maximum value.
-//   4. Delete a node from a BST.
-//   5. Print the BST using Inorder Traversal.
+//   1. Insert a node into a BST.              - O(log n)
+//   2. Search for a value in a BST.           - O(log n)
+//   3. Find the minimum and maximum value.    - O(log n)
+//   4. Delete a node from a BST.              - O(log n)
+//   5. Print the BST using Inorder Traversal. - O(n)
 
 
 public class BinarySearchTree {
