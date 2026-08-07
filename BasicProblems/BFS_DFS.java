@@ -1,18 +1,18 @@
-package BasicProblems;
+/*
+   Basic Problems
+   V -vertex    , E - edges
+  1. Implement BFS using a Queue.                     - O(V+E)
+  2. Implement DFS using Recursion.
+  3. Implement DFS using a Stack.
+  4. Count Connected Components using DFS.
+  5. Detect a cycle in an Undirected Graph using DFS.
+
+*/
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/*
-
-  Implement BFS using a Queue.
-  Implement DFS using Recursion.
-  Implement DFS using a Stack.
-  Count Connected Components using DFS.
-  Detect a cycle in an Undirected Graph using DFS.
-
-*/
 public class BFS_DFS {
     public static void main(String[] args) {
 
@@ -35,13 +35,15 @@ public class BFS_DFS {
         boolean[] visited = new boolean[v];
         dfs(graph , 0 , visited);
     }
-// BFS(Breadth First Search)
+//----------------------------------- BFS(Breadth First Search)--------------------------------------------
+  
     static void bfs(ArrayList<ArrayList<Integer>> graph , int start){
 
+      // create a empty array
         boolean[] visited = new boolean[graph.size()];
         Queue<Integer> queue = new LinkedList<>();
 
-        visited[start] = true;
+        visited[start] = true;               
         queue.offer(start);
 
         while(!queue.isEmpty()){
@@ -58,7 +60,8 @@ public class BFS_DFS {
         }
     }
 
-// DFS -(Depth First Search)
+// ---------------------------------------DFS -(Depth First Search)--------------------------------------
+  
     static void dfs(ArrayList<ArrayList<Integer>> graph , int node , boolean[] visited){
 
         visited[node] = true;
