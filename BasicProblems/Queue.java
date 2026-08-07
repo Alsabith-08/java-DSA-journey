@@ -1,11 +1,11 @@
 
 /*   Basic Problems
-   1. Implement Queue using an array.
-   2. Enqueue an element.
-   3. Dequeue an element.
-   4. Display an Queue
-   5. Implement Circular Queue.
-   6. Check if Queue is Full or Empty
+   1. Implement Queue using an array.  
+   2. Enqueue an element.              -O(1)
+   3. Dequeue an element.              -O(1)
+   4. Display an Queue                 -O(n)
+   5. Implement Circular Queue.        
+   6. Check if Queue is Full or Empty  
 */
 
 public class Queue {
@@ -48,7 +48,7 @@ public class Queue {
         queue1.display();
     }
 
-    // LINEAR QUEUE
+    // --------------------------------------LINEAR QUEUE---------------------------------------------------------
     static class queueUsingArray{
         // Variables
         int[] arr;
@@ -95,7 +95,7 @@ public class Queue {
     }
 
 
-    // CIRCULAR QUEUE
+    // ----------------------------------------------CIRCULAR QUEUE-----------------------------------------------------
     static class circularQueue {
         int[] arr;
         int front, rear, size;
