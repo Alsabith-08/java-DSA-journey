@@ -1,11 +1,19 @@
-package BasicProblems;
 
+/*  Basic Problems
+    V - vertex    , E - edges
+   1. Create a graph using an Adjacency Matrix.    -O(V²)
+   2. Create a graph using an Adjacency List.      -O(V²)
+   3. Add an edge to the graph.                    -O(1)
+   4. Print the graph (Adjacency List).            -O(V²)
+   5. Find the degree of each vertex.              -O(V)
+
+*/
 import java.util.ArrayList;
 
 public class Graph {
     public static void main(String[] args) {
 
-        // Adjacent Matrix
+        //------------------------------------------Adjacent Matrix---------------------------------
         int vertices = 5;
 
         int[][] graph = new int[vertices][vertices];
@@ -30,7 +38,8 @@ public class Graph {
             System.out.println();
         }
 
-        // Adjacent List
+        //------------------------------------- Adjacent List------------------------------------------------
+        
         ArrayList<ArrayList<Integer>> graph1 = new ArrayList<>();
 
         // create an empty list
@@ -55,7 +64,7 @@ public class Graph {
         print(graph1);
 
         
-        // Add Edge
+        // ------------------------------------------Add Edge -----------------------------------------
         addEdge edge = new addEdge();
 
         int v = 5;
@@ -79,7 +88,7 @@ public class Graph {
             System.out.println();
         }
 
-        // Count the edges of Each Vertex
+        // -----------------------------------Count the edges of Each Vertex------------------------------------
         ArrayList<ArrayList<Integer>> graph2 = new ArrayList<>();
 
         // create an empty list
@@ -100,14 +109,16 @@ public class Graph {
         graph2.get(2).add(4);
         graph2.get(4).add(2);
 
-        // Count the edge fo each Vertices
+        
         System.out.println("\nCount the edges :");
         for (int i = 0; i < vertices ; i++) {
             System.out.println("Vertex : " + i + " -"+ graph2.get(i).size());
         }
 
     }
+    // ---------------------------- Add Edge Function -----------------------------------------
     static class addEdge {
+        
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
 
         void addEdge(int u, int v) {
@@ -116,8 +127,9 @@ public class Graph {
             graph.get(v).add(u);
         }
     }
-    // Print the Adjacent List
+    // --------------------------------Print function -----------------------------------------
     static void print(ArrayList<ArrayList<Integer>> graph){
+        
         for (int i = 0; i <graph.size() ; i++) {
             System.out.print(i + " ->");
 
