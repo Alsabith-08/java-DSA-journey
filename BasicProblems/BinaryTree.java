@@ -1,4 +1,13 @@
-package BasicProblems;
+/* Basic Problems
+
+   1. Create a Binary Tree node.   - O(1)
+   2. Insert (Level Order)         - O(n)
+   3. Preorder Traversal.          - O(n)                 
+   4. Inorder Traversal.           - O(n)
+   5. Postorder Traversal.         - O(n)
+   6. Find the height.             - O(n)
+   
+ */
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -27,6 +36,7 @@ public class BinaryTree {
         System.out.println("\nHeight of the tree : "+tree.height(tree.root));
     }
 
+    // Node Structure
     static class Node{
         int data;
         Node left , right;
@@ -37,10 +47,11 @@ public class BinaryTree {
             right = null;
         }
     }
+    
     static class binary{
         Node root;
 
-        // Insert
+        // Insert  - Level Order Using Queue 
         public void insert(int data){
             Node newNode = new Node(data);          // Create A NewNode
 
@@ -102,6 +113,8 @@ public class BinaryTree {
         }
 
         // Height
+        // two Definitions - Number Of Edges - 2
+        //                 - Number Of Nodes - 3
         public  int height(Node root){
             if(root == null){
                 return 0;
