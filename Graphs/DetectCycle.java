@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 // Detect Cycle In Undirected Graph Using DFS
 
 import java.util.ArrayList;
