@@ -1,5 +1,3 @@
-package BasicProblems;
-
 /* Basic Problems
   1. Implement Topological Sort using DFS.                        - O(V + E)
   2. Implement Topological Sort using Kahn's Algorithm (BFS).     - O(V + E)
@@ -39,7 +37,7 @@ public class TopologicalSort {
     static void addEdge(ArrayList<ArrayList<Integer>> graph , int u , int v){
         graph.get(u).add(v);
     }
-
+    // -------------------------------------------- DFS ---------------------------------------------
     // IDEA
     // topological sort - DFS goes as deep as possible
     // node finishes put to stack
@@ -78,7 +76,8 @@ public class TopologicalSort {
     }
 
 
-    // Kahn's Algorithm
+    // ------------------------------------------------Kahn's Algorithm(BFS) -----------------------------------------------
+  
     static void topologicalSortUsingKahnAlgo(ArrayList<ArrayList<Integer>> graph , int vertices){
 
         // Indegree Array
