@@ -113,9 +113,7 @@ public class BinarySearchBasicProblems {
     // 5. Count the no.of Occurrence of a target
     static int countOccurrence(int[] arr , int target){
         // Formula : last - first +1
-        int start = 0;
-        int end = arr.length -1;
-
+      
         int first = firstOccurrence(arr , target);
 
         if(first == -1){
