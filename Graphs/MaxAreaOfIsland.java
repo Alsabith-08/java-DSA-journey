@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 public class MaxAreaOfIsland {
     public static void main(String[] args) {
         int[][] grid = {
