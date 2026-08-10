@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 public class NumberOfProvinces {
     public static void main(String[] args) {
         int[][] isConnected = {
