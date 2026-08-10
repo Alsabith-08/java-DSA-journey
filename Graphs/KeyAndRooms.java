@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
