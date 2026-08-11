@@ -1,4 +1,7 @@
-package ChatGPT_Problems.Graphs;
+
+// Find the Shortest Path in Binary Matrix 
+// Start to destination : (0 , 0) -> (n-1)(n-1)  , n -> grid.length
+// Time Complexity : n x n -> O(n 2) 
 
 import java.util.LinkedList;
 import java.util.Queue;
