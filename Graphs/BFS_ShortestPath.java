@@ -1,6 +1,7 @@
-package ChatGPT_Problems.Graphs;
 
-// Find the shortest Path in Undirected Graph
+
+// Find the shortest Path in Undirected Graph Using BFS
+// Time Complexity = O(v + E)
 import java.util.*;
 
 public class BFS_ShortestPath {
@@ -101,7 +102,7 @@ public class BFS_ShortestPath {
             current = parent[current];
         }
         // currently destination -> source
-         // reverse it , source -> destination
+        // reverse it , source -> destination
         Collections.reverse(path);
 
         return path;
