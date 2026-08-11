@@ -1,7 +1,7 @@
 
 // Find the Shortest Path in Binary Matrix 
 // Start to destination : (0 , 0) -> (n-1)(n-1)  , n -> grid.length
-// Time Complexity : n x n -> O(n 2) 
+// Time Complexity : n x n -> O(n²) 
 
 import java.util.LinkedList;
 import java.util.Queue;
