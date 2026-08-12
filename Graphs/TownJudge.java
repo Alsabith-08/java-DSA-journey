@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 public class TownJudge {
     public static void main(String[] args) {
 
