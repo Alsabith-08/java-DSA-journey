@@ -1,3 +1,7 @@
+
+// Bellman Ford Algorithm - shortest path algorithm
+// it works well for negative weight edges
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -20,6 +24,7 @@ public class Bellman_Ford {
         BellmanFord(vertices , edges , source);
 
     }
+    // Edge Class
     static class Edge{
         int source;
         int destination;
@@ -35,11 +40,15 @@ public class Bellman_Ford {
     static void BellmanFord(int vertices , ArrayList<Edge> edges , int source){
         int INF = Integer.MAX_VALUE;
 
+        // create a distance Array fill with Max Integer Value
         int[] dist = new int[vertices];
         Arrays.fill(dist , INF);
 
+        // source distance is always is 0
         dist[source] = 0;
 
+        // V - 1 times?
+        // A shortest Path contains at most V-1 edges
         for (int i = 0; i < vertices -1; i++) {
             for(Edge edge : edges){
 
@@ -63,6 +72,8 @@ public class Bellman_Ford {
                 return;
             }
         }
+
+        // print the distance form source to all node
         System.out.println("Shortest Distances From Source " + source + " : ");
         for (int i = 0; i < vertices ; i++) {
 
