@@ -1,6 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
-
 // Minimum Spanning Tree
 
 import java.util.ArrayList;
