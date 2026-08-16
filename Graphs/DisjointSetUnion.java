@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 public class DisjointSetUnion {
     public static void main(String[] args) {
         disjointSetUnion dsu = new disjointSetUnion(6);
