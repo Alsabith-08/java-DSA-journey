@@ -1,5 +1,3 @@
-package ChatGPT_Problems.graph_Algorithm;
-
 // Find the minimum Spanning tree using Kruskal Algorithm
 
 import java.util.ArrayList;
