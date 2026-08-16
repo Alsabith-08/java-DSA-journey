@@ -3,7 +3,7 @@
 // Space complexity - O(n)
 import java.util.Arrays;
 
-public class MinCostConnectPoints_1584 {
+public class MinCostConnectPoints{
     public static void main(String[] args) {
         int[][] points = {
                 {0, 0},
