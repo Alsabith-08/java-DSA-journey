@@ -1,4 +1,3 @@
-package DSA;
 
 public class FindMinValue {
     public static void main(String[] args) {
