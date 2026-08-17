@@ -1,4 +1,14 @@
-package BasicProblems;
+
+/*   Learn - Revise : 
+   1. BFS             - unweighted shortest Path
+   2. DFS             - deep traversal / components / cycles
+   3. Dijkstra        - weighted shortest path , No negative edges
+   4. Bellman-Ford    - weighted shhortest path , negative edges
+   5. Prim's          - MST , grow from vertex
+   6. Kruskal's       - MST , sort edges
+   7. DSU             - groups + cycle Dectection + kruskal
+   8. when to choose which algorithm
+*/
 
 import java.util.*;
 import java.util.Arrays;
@@ -8,7 +18,7 @@ public class Graph_Algorithm {
     public static void main(String[] args) {
 
         // ------------------------------------------------------------------
-        // Unweighted graph for BFS / DFS
+        // Unweighted graph for BFS / DFS   [ edges ]
         // ----------------------------------------------------------------
         List<List<Integer>> graph = new ArrayList<>();
 
@@ -39,9 +49,9 @@ public class Graph_Algorithm {
         System.out.println();
 
 
-        //----------------------------------------------
-        // Weighted Graph for Dijkstra / BellmanFord
-        // --------------------------------------------
+        //----------------------------------------------------------------------------------------
+        // Weighted Graph for Dijkstra / BellmanFord [  edges  ]
+        // ------------------------------------------------------------------------------------
 
         int n = 5;
         List<List<Edge>> weightedGraph = new ArrayList<>();
@@ -73,6 +83,39 @@ public class Graph_Algorithm {
         bellmanFord(bellmanEdges , vertices , 0);
         System.out.println();
 
+        // ---------------------------------------------------------------------------
+        // Kruskal  &   Prim [ edges ]
+        // ---------------------------------------------------------------------------
+
+        List<Edge> mstEdges = new ArrayList<>();
+
+        mstEdges.add(new Edge(0,1,5));
+        mstEdges.add(new Edge(0,2,10));
+        mstEdges.add(new Edge(0,3,9));
+        mstEdges.add(new Edge(1,3,4));
+        mstEdges.add(new Edge(2,3,13));
+        mstEdges.add(new Edge(2,4,14));
+        mstEdges.add(new Edge(3,4,7));
+        mstEdges.add(new Edge(3,5,8));
+        mstEdges.add(new Edge(4,5,2));
+
+        kruskal(mstEdges , 6);
+
+        Prim(weightedGraph);
+
+        //  ------------------------------------------------------------------------------
+        // DSU
+        //  ------------------------------------------------------------------------------
+
+        DSU dsu =new DSU(5);
+        System.out.println("\nDSU :");
+
+        System.out.println("Add edge : "+dsu.union(0,1));
+        System.out.println("Add edge :"+dsu.union(1,2));
+        System.out.println("Add edge :"+dsu.union(3,4));
+        System.out.println("Add edge :"+dsu.union(0,2));
+
+        System.out.println("Find(2) = "+ dsu.find(2));
     }
 
     // -------------------------------------------------------------
@@ -222,5 +265,116 @@ public class Graph_Algorithm {
         for (int i = 0; i < vertices; i++) {
             System.out.println(" 0 -> " +i + " = "+dist[i]);
         }
+    }
+
+    // -------------------------------------------------------------------------
+    // DSU
+    //-------------------------------------------------------------------------
+    static class DSU {
+        int[] parent;
+        int[] rank;
+
+        DSU(int n) {
+            parent = new int[n];
+            rank = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+            }
+        }
+        int find(int node) {
+            if (parent[node] != node) {
+               parent[node] = find(parent[node]);
+            }
+            return parent[node];
+        }
+
+        boolean union(int a , int b){
+            int rootA = find(a);
+            int rootB = find(b);
+
+            if(rootA == rootB){
+                return false;
+            }
+
+            if(rank[rootA] < rank[rootB]){
+                parent[rootA] = rootB;
+            }else if(rank[rootA] > rank[rootB]){
+                parent[rootB] = rootA;
+            }else{
+                parent[rootB] = rootA;
+                rank[rootA]++;
+            }
+            return true;
+        }
+    }
+
+    // --------------------------------------------------------------
+    // Kruskal
+    // -------------------------------------------------------------
+
+    static void kruskal(List<Edge> edges , int vertices){
+
+        edges.sort((a,b) -> a.weight - b.weight);
+
+        DSU dsu = new DSU(vertices);
+
+        int totalWeight = 0;
+        int edgesUsed = 0;
+
+        System.out.println("MST edges : ");
+
+        for(Edge edge : edges){
+            if(dsu.union(edge.source , edge.destination)){
+                System.out.println((char)('A' + edge.source) + " - " +
+                        (char)('A' +edge.destination) + " : " +
+                        edge.weight);
+
+                totalWeight += edge.weight;
+                edgesUsed++;
+
+                if(edgesUsed == vertices-1){
+                    break;
+                }
+            }
+        }
+        System.out.println("Minimum total MST weight : "+ totalWeight);
+    }
+
+    // -------------------------------------------------------------
+    // Prim
+    // ---------------------------------------------------------------
+    static void Prim(List<List<Edge>> graph){
+        int n = graph.size();
+
+        boolean[] visited = new boolean[n];
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[1]- b[1]);
+
+        pq.offer(new int[]{0,0});
+
+        int totalWeight = 0;
+        System.out.println("\nPrim MST : ");
+
+        while(!pq.isEmpty()){
+            int[] current = pq.poll();
+
+            int node = current[0];
+            int weight = current[1];
+
+            if(visited[node]) {
+                continue;
+            }
+            visited[node] = true;
+            totalWeight += weight;
+
+            System.out.println("Added vertex "+ node + " with weight "+ weight);
+
+            for(Edge edge : graph.get(node)){
+                if(!visited[edge.destination]){
+                    pq.offer(new int[]{edge.destination , edge.weight});
+                }
+            }
+        }
+        System.out.println("Totla MST weight : "+ totalWeight);
     }
 }
