@@ -1,4 +1,3 @@
-package LeetCodeEx;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,9 +15,10 @@ public class MergeSortedArray_88 {
     }
 
     static void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m-1;
-        int j = n-1;
-        int k = m+n -1;
+        // use two pointer
+        int i = m-1;       // nums 1 last valid position
+        int j = n-1;       // nums 2 last valid position
+        int k = m+n -1;    // total array length of nums1 array
 
         while(i >= 0 && j >= 0){
             if(nums1[i] > nums2[j]){
@@ -30,7 +30,7 @@ public class MergeSortedArray_88 {
             }
             k--;
         }
-
+        // if second array still has elements
         while( j >=0){
             nums1[k] = nums2[j];
             j--;
