@@ -1,4 +1,5 @@
-package ChatGPT_Problems.TopologicalSort;
+
+// check the graph contains a cycle or not Using Kahn's Algorithm
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -31,7 +32,10 @@ public class CycleDetectionInKahn {
         graph.get(u).add(v);
     }
 
+    // kahn's Algorithm
     static boolean kahnCycle(ArrayList<ArrayList<Integer>> graph , int vertices){
+
+        // Calculate indegree
         int[] indegree = new int[vertices];
 
         for (int i = 0; i < vertices; i++) {
@@ -39,20 +43,26 @@ public class CycleDetectionInKahn {
                 indegree[neighbour]++;
             }
         }
+
+        // Create Queue
         Queue<Integer> queue= new LinkedList<>();
 
+        // check which edges have a 0 indegree , add it queue initilly
         for (int i = 0; i < vertices; i++) {
             if(indegree[i] == 0){
                 queue.offer(i);
             }
         }
 
+        // processedNode variable initially 0
         int processed = 0;
 
+        // check 
         while(!queue.isEmpty()){
+            
             int node = queue.poll();
-
             processed++;
+            
             for (int neighbour : graph.get(node)){
                 indegree[neighbour]--;
 
@@ -61,6 +71,7 @@ public class CycleDetectionInKahn {
                 }
             }
         }
+        // check cycle
         if(processed != vertices){
             return true;
         }
