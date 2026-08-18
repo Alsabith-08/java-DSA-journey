@@ -1,4 +1,5 @@
-package ChatGPT_Problems.TopologicalSort;
+
+// Topological Sort Using Kahn's Algorithm indegree is important that means - number of incoming edges to a node
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class Indegree {
 
         int[] indegree  = new int[vertices];
 
+        // calculate indegree
         for (int i = 0; i < vertices; i++) {
             for(int neighbour : graph.get(i)){
                 indegree[neighbour]++;
