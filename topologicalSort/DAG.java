@@ -1,4 +1,5 @@
-package ChatGPT_Problems.TopologicalSort;
+
+// DAG -(Directed Acyclic Graph) 
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +21,6 @@ public class DAG {
 
         for (int i = 0; i < vertices; i++) {
             System.out.println(i+ " ->" + graph.get(i));
-        }
-        
-        
+        }  
     }
 }
