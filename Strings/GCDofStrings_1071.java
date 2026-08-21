@@ -2,6 +2,12 @@
 
 // Greatest Common Strings 
 
+/*
+    Check : str1 + str2 == str2 + str1
+    find  : GCD(length1 , length2)
+    Return : str1.substring(0, gcdLength)
+ */
+
 public class GCDofStrings_1071 {
     public static void main(String[] args) {
 
