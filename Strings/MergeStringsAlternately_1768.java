@@ -1,4 +1,6 @@
-package ChatGPT_Problems.Strings;
+//https://leetcode.com/problems/merge-strings-alternately/
+
+// Merge the String letter by letter
 
 public class MergeStringsAlternately_1768 {
     public static void main(String[] args) {
