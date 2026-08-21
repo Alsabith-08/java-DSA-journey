@@ -1,4 +1,6 @@
-package ChatGPT_Problems.Strings;
+// https://leetcode.com/problems/greatest-common-divisor-of-strings/description/
+
+// Greatest Common Strings 
 
 public class GCDofStrings_1071 {
     public static void main(String[] args) {
