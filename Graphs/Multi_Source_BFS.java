@@ -1,5 +1,3 @@
-package ChatGPT_Problems.Graphs;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -31,6 +29,7 @@ public class Multi_Source_BFS {
         int rows = grid.length;
         int cols = grid[0].length;
 
+        // create a distance array and fill with -1
         int[][] distance = new int[rows][cols];
 
         // -1 means not visited
@@ -40,6 +39,7 @@ public class Multi_Source_BFS {
 
         Queue<int[]> queue = new LinkedList<>();
 
+        // add all source into queue initially with distance 0
         for (int i = 0; i <rows ; i++) {
             for (int j = 0; j < cols; j++) {
 
@@ -67,6 +67,7 @@ public class Multi_Source_BFS {
                 int newRow = row+ direction[0];
                 int newCol = col+ direction[1];
 
+                // check boundaries
                 if(newRow < 0 || newCol < 0 || newCol >= cols || newRow >= rows){
                     continue;
                 }
