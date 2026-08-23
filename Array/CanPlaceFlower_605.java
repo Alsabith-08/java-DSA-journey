@@ -1,4 +1,5 @@
-package LeetCodeEx.Arrays;
+
+//https://leetcode.com/problems/can-place-flowers/description/
 
 public class CanPlaceFlower_605 {
     public static void main(String[] args) {
