@@ -1,4 +1,5 @@
-package LeetCodeEx.Arrays;
+
+//https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/ 
 
 import java.util.ArrayList;
 import java.util.List;
