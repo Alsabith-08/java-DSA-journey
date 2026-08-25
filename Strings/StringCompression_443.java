@@ -1,4 +1,5 @@
-package LeetCodeEx.Strings;
+
+// https://leetcode.com/problems/string-compression/description/
 
 import java.util.Arrays;
 
