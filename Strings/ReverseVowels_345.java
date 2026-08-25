@@ -1,4 +1,4 @@
-package LeetCodeEx.Strings;
+//https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 
 public class ReverseVowels_345 {
     public static void main(String[] args) {
