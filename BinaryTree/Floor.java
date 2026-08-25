@@ -1,5 +1,3 @@
-package DSA;
-
 public class Floor {
     public static void main(String[] args) {
         int[] arr= {-23,-22,-12,0,0,12,23,34,45,56,78,89,99,100};
