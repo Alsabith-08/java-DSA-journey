@@ -1,4 +1,4 @@
-package LeetCodeEx.Arrays;
+// https://leetcode.com/problems/move-zeroes/description/
 
 /* two pointers Approach :
      we use a variable called insertPos
