@@ -1,4 +1,4 @@
-package LeetCodeEx.Arrays;
+// https://leetcode.com/problems/max-number-of-k-sum-pairs/description/
 
 import java.util.Arrays;
 
@@ -11,16 +11,16 @@ public class MaxNumberOfK_SumPairs_1679 {
         System.out.println("Total Pairs :"+sumPair(nums ,k));
     }
     static int sumPair(int[] nums , int k ){
-        // sort
+        // 1. sort an array
         Arrays.sort(nums);
 
-        //pointers
+        //2. we use two pointers
         int left = 0;
         int right = nums.length -1;
 
         int pairs= 0;
 
-        // continue until pointers meet
+        //3.continue until pointers meet
         while(left < right){
 
             int sum = nums[left] + nums[right];
