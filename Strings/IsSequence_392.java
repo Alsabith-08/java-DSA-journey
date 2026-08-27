@@ -1,4 +1,4 @@
-package LeetCodeEx.Strings;
+//https://leetcode.com/problems/is-subsequence/description/
 
 public class IsSequence_392 {
     public static void main(String[] args) {
