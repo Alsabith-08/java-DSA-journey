@@ -1,4 +1,6 @@
-package LeetCodeEx.SlidingWindow;
+// LeetCode - 1456
+//https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/
+// solved using sliding window - O(n)
 
 public class MaxNoOfVowelsSubString_1456 {
     public static void main(String[] args) {
