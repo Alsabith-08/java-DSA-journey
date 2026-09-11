@@ -1,4 +1,6 @@
-package LeetCodeEx.SlidingWindow;
+// Leetcode - 643
+// https://leetcode.com/problems/maximum-average-subarray-i/
+// solved using - O(n)
 
 public class MaxAvgSubArray1_643 {
     public static void main(String[] args) {
