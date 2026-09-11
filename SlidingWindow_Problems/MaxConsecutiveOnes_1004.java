@@ -1,4 +1,7 @@
-package LeetCodeEx.SlidingWindow;
+
+// Leetcode - 1004
+// https://leetcode.com/problems/max-consecutive-ones-iii/description/
+// solved using Slidng Window - O(n)
 
 public class MaxConsecutiveOnes_1004 {
     public static void main(String[] args) {
