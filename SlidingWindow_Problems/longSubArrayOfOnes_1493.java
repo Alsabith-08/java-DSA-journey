@@ -1,4 +1,7 @@
-package LeetCodeEx.SlidingWindow;
+
+// leetcode - 1493
+// https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/
+// Apporach - sliding window 
 
 public class longSubArrayOfOnes_1493 {
     public static void main(String[] args) {
