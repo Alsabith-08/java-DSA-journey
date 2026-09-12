@@ -1,5 +1,7 @@
-package LeetCodeEx.PrefixSum;
 
+// LeetCode - 1732
+// https://leetcode.com/problems/find-the-highest-altitude/description/
+// Apporach - Prefix Sum
 public class FindHighestAltitude_1732 {
     public static void main(String[] args) {
 
