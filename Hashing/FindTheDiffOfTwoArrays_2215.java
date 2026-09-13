@@ -4,7 +4,7 @@ package LeetCodeEx.Hashing;
 /*
    https://leetcode.com/problems/find-the-difference-of-two-arrays/description/
    Apporach: HashSet
-   TimeComplexity : O(n x m)    -> n- length of nums1 , m- length of nums2
+   TimeComplexity : O(n + m)    -> n- length of nums1 , m- length of nums2
  */
 
 import java.util.ArrayList;
