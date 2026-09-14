@@ -1,14 +1,14 @@
-package LeetCodeEx.Hashing;
+
+/* https://leetcode.com/problems/unique-number-of-occurrences/description/
+   Approach : hashMap + HashSet
+             (Count Occurrence of Each Character) + (find frequency unique)
+   Time Complexity : O(n)          
+ */
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-// https://leetcode.com/problems/unique-number-of-occurrences/description/
-/*
-   Given an array of integers arr, return true if the number of occurrences
-   of each value in the array is unique or false otherwise.
- */
 public class UniqueOccurrence_1207 {
 
     public static void main(String[] args) {
@@ -18,12 +18,13 @@ public class UniqueOccurrence_1207 {
     }
     static boolean uniqueOccurr(int[] arr){
 
+       // Count occurrences
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int num  : arr){
             map.put(num , map.getOrDefault(num , 0) + 1);
         }
 
-        // set
+        // check frequency are Unique
         Set<Integer> frequency = new HashSet<>();
 
         for(int num : map.values()){
