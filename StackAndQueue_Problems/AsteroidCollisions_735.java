@@ -1,4 +1,8 @@
-package LeetCodeEx.StackAndQueue;
+
+// https://leetcode.com/problems/asteroid-collision/description/
+// Approach : Stack
+// Time Complexity : O(n)
+
 import java.util.Arrays;
 import java.util.Stack;
 
