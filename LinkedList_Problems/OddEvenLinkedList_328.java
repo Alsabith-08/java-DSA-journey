@@ -1,7 +1,7 @@
 
 // https://leetcode.com/problems/odd-even-linked-list/description/
-// Approach : iterative / pointers (Save -> reverse -> Mov prev -> Mov current)
-// Time Complexity : O(n)
+// Approach : use two pointer to separate odd and even nodes then add both of it
+// Time Complexity : O(n) 
 
 import java.util.List;
 
