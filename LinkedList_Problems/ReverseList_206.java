@@ -1,6 +1,8 @@
 
 // https://leetcode.com/problems/reverse-linked-list/description/
-// Approach : 
+// Approach :  iterative / pointers (Save -> reverse -> Mov prev -> Mov current)
+// time Complexity : O(n)
+
 public class ReverseList_206 {
     public static void main(String[] args) {
         ListNode head = null;
