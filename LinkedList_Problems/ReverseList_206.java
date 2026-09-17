@@ -1,5 +1,6 @@
-package LeetCodeEx.LinkedList;
 
+// https://leetcode.com/problems/reverse-linked-list/description/
+// Approach : 
 public class ReverseList_206 {
     public static void main(String[] args) {
         ListNode head = null;
