@@ -1,4 +1,7 @@
-package LeetCodeEx.LinkedList;
+
+// https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
+// Approach : find the mid before node then change the next node address to next next node
+// Time Complexity : O(n)
 
 public class DeleteMidNode_2095 {
     public static void main(String[] args) {
@@ -44,7 +47,7 @@ public class DeleteMidNode_2095 {
         return head;
     }
 
-    static ListNode delMid(ListNode head){
+    static ListNode delMid(ListNode head){     // use two pointers
 
         if(head.next == null){
             return null;
@@ -52,11 +55,13 @@ public class DeleteMidNode_2095 {
         ListNode slow = head;
         ListNode fast = head;
 
+        // find the mid before element 
         while(fast.next.next != null && fast.next.next.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
 
+        // change the address of next to next next
         slow.next = slow.next.next;
         return head;
     }
