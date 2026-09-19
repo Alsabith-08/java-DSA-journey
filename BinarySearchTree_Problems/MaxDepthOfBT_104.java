@@ -1,20 +1,8 @@
-package LeetCodeEx.BST;
-
 
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
-/*  Given the root of a binary tree, return its maximum depth.
-
-   A binary tree's maximum depth is the number of nodes along the
-   longest path from the root node down to the farthest leaf node.
-*/
 // Approach - Recursion
 // Time Complexity - O(n)
-// Space Complexity - O(log n) - Best Case(Balanced Tree)
-//                  - O(n) - Worst Case (Skewed Tree)
-
-// Maximum Depth = no.of.nodes on the longest path from thr root to a leaf
-// Maximum Depth (nodes) - 4
-// Longest Path (edges) - 3
+// Space Complexity - O(log n) - Best Case(Balanced Tree) && O(n) - Worst Case (Skewed Tree)
 
 public class MaxDepthOfBT_104 {
     public static void main(String[] args) {
