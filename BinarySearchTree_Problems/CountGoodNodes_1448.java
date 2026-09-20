@@ -1,4 +1,7 @@
-package LeetCodeEx.BST;
+
+// https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/
+// Approach : DFS
+// Time Complexity : O(n) , Space Complexity : O(h)
 
 public class CountGoodNodes_1448 {
     public static void main(String[] args) {
@@ -62,21 +65,21 @@ public class CountGoodNodes_1448 {
         return dfs(root , root.val);
     }
 
-    static int goodNode1(TreeNode root){
-        return count(root , Integer.MIN_VALUE);
-    }
+    // static int goodNode1(TreeNode root){
+    //     return count(root , Integer.MIN_VALUE);
+    // }
 
-    static int count(TreeNode node , int maxValue){
-        if(node == null){
-            return 0;
-        }
+    // static int count(TreeNode node , int maxValue){
+    //     if(node == null){
+    //         return 0;
+    //     }
 
-        int isGood = 0;
+    //     int isGood = 0;
 
-        if(node.val >= maxValue){
-            isGood = 1;
-            maxValue = node.val;
-        }
-        return isGood + count(node.left , maxValue) + count(node.right , maxValue);
+    //     if(node.val >= maxValue){
+    //         isGood = 1;
+    //         maxValue = node.val;
+    //     }
+    //     return isGood + count(node.left , maxValue) + count(node.right , maxValue);
     }
 }
