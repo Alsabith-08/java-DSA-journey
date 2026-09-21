@@ -3,15 +3,6 @@ package LeetCodeEx.BST;
 // https://leetcode.com/problems/path-sum-iii/description/
 // Approach : HashMap + prefixSum
 // Time Complexity : O(n)
-
-/*   Given the root of a binary tree and an integer targetSum,
-     return the number of paths where the sum of the values along
-     the path equals targetSum.
-
-     The path does not need to start or end at the root or a leaf,
-     but it must go downwards
-     (i.e., traveling only from parent nodes to child nodes)
-  */
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,11 +24,9 @@ public class PathSum3_437 {
 
         root.left.right.right = new TreeNode(1);
 
-
         int targetSum = 8;
 
-        System.out.println(pathSum(root ,
-                targetSum));
+        System.out.println(pathSum(root ,targetSum));
 
     }
     static class TreeNode{
@@ -52,17 +41,18 @@ public class PathSum3_437 {
 
     static int pathSum(TreeNode root , int targetSum){
 
+         // create a HashMap (Key : Value)
+         // key -> prefix Sum
+         // value -> how many times that prefix sum appeared
         Map<Long , Integer> map = new HashMap<>();
 
         map.put(0L , 1);
 
-        return dfs(root , 0 , targetSum , map);
+        return dfs(root , 0 , targetSum , map);                 // call dfs
     }
-    static int dfs(TreeNode node , long currentSum ,
-                   int targetSum ,
-                   Map<Long , Integer> map){
+    static int dfs(TreeNode node , long currentSum ,int targetSum ,Map<Long , Integer> map){   // currentNode , current PrefixSum , target Sum , map
 
-        if(node == null){
+        if(node == null){        // Base Case
             return 0;
         }
 
