@@ -1,12 +1,11 @@
 package LeetCodeEx.BST;
 
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+// Approach : Recursion -> Search both sides, if p and q are found on different sides of a node , 
+// that node id their Lowest Common Ancestor
 
-/*   Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
-     According to the definition of LCA on Wikipedia:
-     “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that
-      has both p and q as descendants (where we allow a node to be a descendant of itself).”
- */
+// Time Complexity : O(n)  , Space Complexity : O(h) -> n- no.of.nodes , h- height of the tree
+
 public class LowestCommonAncestor_236 {
     public static void main(String[] args) {
 
