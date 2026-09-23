@@ -1,4 +1,3 @@
-package LeetCodeEx.BST;
 
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 // Approach : Recursion -> Search both sides, if p and q are found on different sides of a node , 
