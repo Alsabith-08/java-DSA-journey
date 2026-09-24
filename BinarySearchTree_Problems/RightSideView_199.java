@@ -1,10 +1,7 @@
-package LeetCodeEx.BST;
 
 // https://leetcode.com/problems/binary-tree-right-side-view/description/
-
-/*   Given the root of a binary tree, imagine yourself standing on the right side of it,
-     return the values of the nodes you can see ordered from top to bottom.
- */
+// Approach : BFS + return the last node at each level
+// Time Complexity : O(n)   , Space Complexity : O(h)
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -22,7 +19,7 @@ public class RightSideView_199 {
        root.left.right = new TreeNode(5);
        root.right.right = new TreeNode(4);
 
-        System.out.println(rightSide(root));
+       System.out.println(rightSide(root));
     }
     static class TreeNode{
         int val;
@@ -35,29 +32,29 @@ public class RightSideView_199 {
     }
 
     static List<Integer> rightSide(TreeNode root){
-        List<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();               // Create a Empty array List that store the last node of each level
 
         if(root == null){
             return result;
         }
 
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();            // Create a queue that store node of each level
 
         queue.add(root);
 
-        while(!queue.isEmpty()){
+        while(!queue.isEmpty()){         
 
             int size = queue.size();
 
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {                   // traverse all node on that level
 
-                TreeNode current = queue.poll();
-
-                if(i == size -1){
-                    result.add(current.val);
+                TreeNode current = queue.poll();               // remove that first node
+ 
+                if(i == size -1){                              // check if that is last node of level , add to result
+                    result.add(current.val); 
                 }
 
-                if(current.left != null){
+                if(current.left != null){                      // if it's not null , add to queue
                     queue.add(current.left);
                 }
 
@@ -65,7 +62,7 @@ public class RightSideView_199 {
                     queue.add(current.right);
                 }
             }
-        }
+        }                                                      // return result
          return result;
     }
 }
