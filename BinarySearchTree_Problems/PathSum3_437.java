@@ -1,8 +1,8 @@
-package LeetCodeEx.BST;
 
 // https://leetcode.com/problems/path-sum-iii/description/
 // Approach : HashMap + prefixSum
 // Time Complexity : O(n)
+
 import java.util.HashMap;
 import java.util.Map;
 
