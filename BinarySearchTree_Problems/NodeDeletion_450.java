@@ -1,4 +1,7 @@
-package LeetCodeEx.BST;
+
+//https://leetcode.com/problems/delete-node-in-a-bst/description/
+// Approach : BFS + Find the Node + handle 3 cases
+// Time Complexity : O(log n)  , Space Complexity : O(log n)
 
 public class NodeDeletion_450 {
     public static void main(String[] args) {
@@ -79,6 +82,7 @@ public class NodeDeletion_450 {
                 return root.left;
             }
 
+            // Case 3 : node has 2 children
             TreeNode sucessor = root.right;
 
             while(sucessor.left != null){
