@@ -1,4 +1,7 @@
-package LeetCodeEx.Problems;
+
+// https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/
+// Approach : use tow variables
+// Time Complexity : O(n)   , Space Complexity : O(n)
 
 public class MaxNestingDepthOfTheParentheses_1614 {
     public static void main(String[] args) {
