@@ -1,10 +1,11 @@
-package LeetCodeEx.Graph;
+
+//https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/
+// Approach : BFS + expanded Wave + nearest Destination first
+// Time Complexity : O(R x C) , Space Complexity : O(R x C)
 
 import java.util.LinkedList;
 import java.util.Queue;
-//import ChatGPT_Problems.LinkedList.LinkedList;
 
-//https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/
 public class NearestExitFromEntrance_1926 {
     public static void main(String[] args) {
 
