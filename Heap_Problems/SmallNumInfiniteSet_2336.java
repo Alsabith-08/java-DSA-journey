@@ -1,13 +1,14 @@
-package LeetCodeEx.Heap;
 
-
-// https://leetcode.com/problems/smallest-number-in-infinite-set/description/
+// https://leetcode.com/problems/smallest-number-in-infinite-set/description/    (Medium)
+// Approach : minHeap + HashSet
 // Time Complexity : O(log k)   , Space Complexity :O(k)
+
 import java.util.HashSet;
 import java.util.PriorityQueue;
 
 public class SmallNumInfiniteSet_2336 {
     public static void main(String[] args) {
+        
       SmallestInfiniteSet obj = new SmallestInfiniteSet();
 
         System.out.println(obj.popSmallest());
@@ -28,8 +29,8 @@ public class SmallNumInfiniteSet_2336 {
     }
     static class SmallestInfiniteSet{
 
-        private PriorityQueue<Integer> minHeap;
-        private HashSet<Integer> set;
+        private PriorityQueue<Integer> minHeap;             // quickly find the smallest restored number
+        private HashSet<Integer> set;                       // prevent duplicates
         private int next;
 
         public SmallestInfiniteSet(){
