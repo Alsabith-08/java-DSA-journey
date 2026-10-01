@@ -1,6 +1,8 @@
-package LeetCodeEx.Strings;
 
 // https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/description/
+// Approach : if-else
+// Time Complexity : O(n)   , Space Complexity : O(n)
+
 public class MinimumNoOfChairs_3168 {
     public static void main(String[] args) {
          String s = "ELELEEL";
