@@ -1,4 +1,3 @@
-package LeetCodeEx.Strings;
 
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 // Approach  : HashSet + Two Pointers
@@ -17,13 +16,13 @@ public class LongestSubStringWithoutRepeatingCharacters_3 {
         int left = 0;
         int maxLength = 0;
 
-        for (int right = 0; right < s.length(); right++) {
-            while(set.contains(s.charAt(right))){
-                set.remove(s.charAt(left));
+        for (int right = 0; right < s.length(); right++) {            // while -> remove the character until the character disappears
+            while(set.contains(s.charAt(right))){                     // the set contains the character
+                set.remove(s.charAt(left));                           // remove the left character and increment by 1
                 left++;
             }
-            set.add(s.charAt(right));
-            maxLength = Math.max(maxLength , right - left +1);
+            set.add(s.charAt(right));                                 // add that character
+            maxLength = Math.max(maxLength , right - left +1);        // calculate the maxLength -> FORMULA : right - left +1
         }
         return maxLength;
     }
