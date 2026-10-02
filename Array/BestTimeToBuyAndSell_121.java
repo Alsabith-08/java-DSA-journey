@@ -1,6 +1,9 @@
-package LeetCodeEx.Arrays;
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+// IDEA : Minimum Price= cheapest price seen so far , For every current price: cost , maxProfit , update minimumPrice
+
+// Time Complexity : O(n)  
+// Space Complexity :O(1)
 
 public class BestTimeToBuyAndSell_121 {
     public static void main(String[] args) {
@@ -11,16 +14,16 @@ public class BestTimeToBuyAndSell_121 {
 
     static int maxprofit(int[] prices) {
 
-        int maxProfit = 0;
+        int maxProfit = 0;                                       // initially 0
         int n = prices.length;
-        int minimumPrice = prices[0];
+        int minimumPrice = prices[0];                           // initially first price is the minimum Price
 
         for (int i = 1; i < n; i++) {
 
-            int cost = prices[i] - minimumPrice;
+            int profit = prices[i] - minimumPrice;               // find the profit by currentPrice with nextPrice
 
-            maxProfit = Math.max(maxProfit, cost);
-            minimumPrice = Math.min(prices[i], minimumPrice);
+            maxProfit = Math.max(maxProfit, profit);             // update the maxProfit if profit is greater than maxProfit
+            minimumPrice = Math.min(prices[i], minimumPrice);    // update the minimumPrice by check currentprice is less than currentMinPrice
         }
         return maxProfit;
     }
