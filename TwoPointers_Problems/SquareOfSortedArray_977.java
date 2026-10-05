@@ -1,5 +1,6 @@
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/description/
+// NOTE : output must be sorted
 // Approach : Two Pointers
 // IDEA : traverse n-1 to 0 , convert values to abs then compare left > right ,square left value  add to result otherwise square
 //                            right put it to result
