@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/description/
 // Approach : Two Pointers
