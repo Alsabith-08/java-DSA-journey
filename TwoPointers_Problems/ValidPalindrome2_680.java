@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/valid-palindrome-ii/
 // NOTE : delete at most one element
