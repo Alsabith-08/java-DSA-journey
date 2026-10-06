@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/container-with-most-water/description/
 // Approach / Pattern : Two Pointers
@@ -8,6 +7,7 @@ package LeetCodeEx.TwoPointers;
 //        move pointer based on which pointer has minimum value is left (+1) , is right(-1)
 
 // Time Complexity : O(n)    , Space Complexity : O(1)
+
 public class ContainerWithMostWater_11 {
     public static void main(String[] args) {
         int[] nums = {1,8,6,2,5,4,8,3,7};
@@ -15,14 +15,15 @@ public class ContainerWithMostWater_11 {
         System.out.println(maxWater(nums));
     }
     static int maxWater(int[] nums){
-        int left = 0;
+        int left = 0;                            // use two pointers and one variable(maxwater)
         int right = nums.length -1;
         int maxwater = 0;
 
-        while(left < right){
-            maxwater = Math.max(maxwater , (right - left ) *Math.min(nums[left] , nums[right]));
-            if(nums[left] < nums[right]){
-                left++;
+        while(left < right){                     // terminate condition
+            maxwater = Math.max(maxwater , (right - left ) *Math.min(nums[left] , nums[right]));            // update maxwater -> pick maxValue from 
+                                                                             //maxwater or calculate width(right -left) multiply(*) pick min value on left/right
+            if(nums[left] < nums[right]){                 // move left +1 if left is minimum
+                left++;                                   // otherwise , right -1 
             }else{
                 right--;
             }
