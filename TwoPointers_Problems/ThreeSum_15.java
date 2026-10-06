@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/3sum/description/
 // NOTE : no duplicates , three pointers sum is 0 , i!=k , j!= k, i!=j
