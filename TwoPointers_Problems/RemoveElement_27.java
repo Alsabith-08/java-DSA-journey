@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 // Approach : Two Pointers
