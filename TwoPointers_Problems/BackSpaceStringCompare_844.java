@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/backspace-string-compare/description/
 // Approach : Two Pointers + reverse Traversal
