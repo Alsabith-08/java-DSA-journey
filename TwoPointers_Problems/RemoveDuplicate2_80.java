@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
 // Approach : Two Pointers
@@ -6,6 +5,7 @@ package LeetCodeEx.TwoPointers;
 //        if not equal replace the current index to k, then move k+1
 
 // Time Complexity : O(n)      , Space Complexity  : O(1)
+
 public class RemoveDuplicate2_80 {
     public static void main(String[] args) {
         int[] nums = {1,1,1,2,2,3};
