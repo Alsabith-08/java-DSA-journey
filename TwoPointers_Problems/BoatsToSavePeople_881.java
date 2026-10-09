@@ -1,4 +1,3 @@
-package LeetCodeEx.TwoPointers;
 
 // https://leetcode.com/problems/boats-to-save-people/description/
 // Approach : Two Pointers
