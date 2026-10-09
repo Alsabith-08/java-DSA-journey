@@ -1,6 +1,3 @@
-package LeetCodeEx.TwoPointers;
-
-import java.util.Arrays;
 
 // https://leetcode.com/problems/assign-cookies/
 // Approach : Two Pointers (both on same pointers)
@@ -9,6 +6,8 @@ import java.util.Arrays;
 //        otherWise , decrease child --
 
 // Time Complexity :O(n log n)   , Space Complexity :O(1)
+
+import java.util.Arrays;
 
 public class AssignCookies_455 {
     public static void main(String[] args) {
