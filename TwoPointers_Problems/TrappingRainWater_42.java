@@ -1,5 +1,3 @@
-package LeetCodeEx.HARD;
-
 // https://leetcode.com/problems/trapping-rain-water/description/
 // Approach : Two Pointers
 // IDEA : using prefix to find the LeftMax and RightMax
