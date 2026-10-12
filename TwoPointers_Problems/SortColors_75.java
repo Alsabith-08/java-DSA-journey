@@ -1,6 +1,6 @@
-package LeetCodeEx.TwoPointers;
 
 //https://leetcode.com/problems/sort-colors/description/
+
 // Approach : Three Pointers
 // IDEA : low → position for the next 0
 //        mid → current element to check
