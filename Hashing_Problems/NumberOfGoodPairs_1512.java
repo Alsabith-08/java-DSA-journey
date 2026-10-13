@@ -1,4 +1,3 @@
-package LeetCodeEx.Hashing;
 
 // https://leetcode.com/problems/number-of-good-pairs/description/
 // Approach : use for two loops
