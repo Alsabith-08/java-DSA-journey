@@ -1,4 +1,3 @@
-package LeetCodeEx.Hashing;
 
 // https://leetcode.com/problems/majority-element/description/
 // Approach : Boyer–Moore Voting Algorithm
