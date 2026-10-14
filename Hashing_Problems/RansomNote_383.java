@@ -1,4 +1,3 @@
-package LeetCodeEx.Hashing;
 
 // https://leetcode.com/problems/ransom-note/
 // Approach : Frequency Counting
