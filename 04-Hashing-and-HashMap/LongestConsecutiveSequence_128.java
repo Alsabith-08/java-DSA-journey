@@ -1,8 +1,7 @@
-package Hashing;
-
-//
+// https://leetcode.com/problems/longest-consecutive-sequence/description/
 // Approach : HashSet
-// IDEA :
+// IDEA : Use a HashSet to count consecutive numbers only when the current number
+//        has no predecessor (num - 1), keeping the time complexity O(n) on average.
 
 // Time Complexity : O()     , Space Complexity : O()
 import java.util.HashSet;
