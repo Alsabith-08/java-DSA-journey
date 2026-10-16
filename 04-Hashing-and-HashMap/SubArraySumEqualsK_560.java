@@ -1,4 +1,3 @@
-package LeetCodeEx.Hashing;
 
 // https://leetcode.com/problems/subarray-sum-equals-k/description/
 // Approach : prefix Sum + hashMap
