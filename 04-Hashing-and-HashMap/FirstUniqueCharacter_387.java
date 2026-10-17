@@ -1,4 +1,3 @@
-package Hashing;
 
 // https://leetcode.com/problems/first-unique-character-in-a-string/description/
 // Approach : Counting Freqency
