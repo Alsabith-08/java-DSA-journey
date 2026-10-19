@@ -1,4 +1,3 @@
-package Hashing;
 
 // https://leetcode.com/problems/isomorphic-strings/description/
 // Approach  : Use two HashMap
