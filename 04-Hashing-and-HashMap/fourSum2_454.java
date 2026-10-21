@@ -1,4 +1,3 @@
-package LeetCodeEx.Hashing;
 
 // https://leetcode.com/problems/4sum-ii/description/
 // Pattern : HashMap + Complement
